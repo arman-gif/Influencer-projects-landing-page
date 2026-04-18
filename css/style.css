@@ -181,7 +181,7 @@
 .featured{
     display: flex;
     gap: 100px;
-    padding: 30px 60px;
+    padding: 100px 60px;
 }
 
 .featured-text{
@@ -196,10 +196,11 @@
 }
 
 .featured-text p {
-    color: #666;
-    margin-bottom: 25px;
+    color: #6C6C6C;
+    margin-bottom: 28px;
     font-size: 16px;
     line-height: 26px;
+    font-weight: 700;
 }
 
 .featured-text button {
@@ -241,8 +242,90 @@ footer {
 }
 
 
-
 /* footer section end */
 
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+
+    /* navbar */
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* banner */
+    .bannar {
+        flex-direction: column-reverse;
+        padding: 40px 20px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .bannar-text h1 {
+        font-size: 30px;
+    }
+
+    .bannar-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* logo section */
+    .logo {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* collection */
+    .collection {
+        padding: 20px;
+    }
+
+    .collection-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .info {
+        padding-right: 0;
+    }
+
+    /* featured */
+    .featured {
+        flex-direction: column-reverse;
+        padding: 50px 20px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .featured-text h3 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .featured-con img {
+        width: 100%;
+    }
+
+    /* footer */
+    footer {
+        padding: 50px 20px;
+    }
+}
 
 
